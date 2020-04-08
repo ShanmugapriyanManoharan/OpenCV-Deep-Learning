@@ -23,43 +23,59 @@ Type the following command to expand the Raspberry Pi3 file system:
 sudo raspi-config
 
 Then select the following:
+
 Advanced Options > A1 Expand filesystem > Press “Enter
 
 # Step 3: Install Dependencies
 
 a. The first step is to update and upgrade any existing packages:
+
 sudo apt-get update
+
 sudo apt-get upgrade
+
 Then reboot your pi.
 
 b. Install CMAKE developer packages:
+
 sudo apt-get install build-essential cmake pkg-config -y
 
 c. Install Image I/O packages:
+
 sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev -y
 
 d. Install Video I/O packages:
+
 sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev -y
+
 sudo apt-get install libxvidcore-dev libx264-dev -y
 
 e. Install the GTK development library for basic GUI windows:
+
 sudo apt-get install libgtk2.0-dev libgtk-3-dev -y
 
 f. Install optimization packages (improved matrix operations for OpenCV):
+
 sudo apt-get install libatlas-base-dev gfortran -y
 
 # Step 4: Download the OpenCV 3.4 and contrib extra modules
 
 cd
+
 wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.4.0.zip
+
 unzip opencv.zip
+
 wget -O opencv\_contrib.zip https://github.com/Itseez/opencv\_contrib/archive/3.4.0.zip
+
 unzip opencv\_contrib.zip
 
 # Step 5: Compile and Install OpenCV 3.4.0 for Python 3 and C++:
 
 cd opencv-3.4.0
+
 mkdir build
+
 cd build
 
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
