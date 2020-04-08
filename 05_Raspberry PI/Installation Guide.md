@@ -100,16 +100,16 @@ Open your /etc/dphys-swapfile and then edit the CONF\_SWAPSIZE variable
 
 sudo nano /etc/dphys-swapfile
 
-It will open the nano editor for editing the CONF\_SWAPSIZE. Change it like below:
+It will open the nano editor for editing the CONF\_SWAPSIZE. Change it like below:\\
 
-\# set size to absolute value, leaving empty (default) then uses computed value
-\# you most likely don't want this, unless you have an special disk situation
-\# CONF\_SWAPSIZE=100 
-CONF\_SWAPSIZE=1024 
-Then save the changes you’ve made 
-Then type the following lines to take it into effect
-sudo /etc/init.d/dphys-swapfile stop
-sudo /etc/init.d/dphys-swapfile start
+\# set size to absolute value, leaving empty (default) then uses computed value\\
+\# you most likely don't want this, unless you have an special disk situation\\
+\# CONF\_SWAPSIZE=100 \\
+CONF\_SWAPSIZE=1024 \\
+Then save the changes you’ve made \\
+Then type the following lines to take it into effect\\
+sudo /etc/init.d/dphys-swapfile stop\\
+sudo /etc/init.d/dphys-swapfile start\\
 
 # Step 7: Ready to be Compile:
 
