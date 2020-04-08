@@ -70,7 +70,7 @@ wget -O opencv\_contrib.zip https://github.com/Itseez/opencv\_contrib/archive/3.
 
 unzip opencv\_contrib.zip
 
-# Step 5: Compile and Install OpenCV 3.4.0 for Python 3 and C++:
+# Step 5: Compile and Install OpenCV 3.4.0 for Python and C++:
 
 cd opencv-3.4.0
 
@@ -81,7 +81,7 @@ cd build
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D CMAKE_INSTALL_PREFIX=/usr/local \
 -D BUILD_opencv_java=OFF \
--D BUILD_opencv_python2=OFF \
+-D BUILD_opencv_python2=ON \
 -D BUILD_opencv_python3=ON \
 -D PYTHON_DEFAULT_EXECUTABLE=$(which python3) \
 -D INSTALL_C_EXAMPLES=ON \
@@ -97,13 +97,14 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 It will enable OpenCV to compile with all four cores of the Raspberry PI without any memory issues.
 Open your /etc/dphys-swapfile and then edit the CONF\_SWAPSIZE variable
 
+
 sudo nano /etc/dphys-swapfile
 
 It will open the nano editor for editing the CONF\_SWAPSIZE. Change it like below:
 
-# set size to absolute value, leaving empty (default) then uses computed value
-# you most likely don't want this, unless you have an special disk situation
-# CONF\_SWAPSIZE=100 
+\# set size to absolute value, leaving empty (default) then uses computed value
+\# you most likely don't want this, unless you have an special disk situation
+\# CONF\_SWAPSIZE=100 
 CONF\_SWAPSIZE=1024 
 Then save the changes you’ve made 
 Then type the following lines to take it into effect
