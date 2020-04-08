@@ -191,13 +191,14 @@ git clone https://github.com/sol-prog/raspberry-pi-opencv.git
 
 cd raspberry-pi-opencv/tests
 
-Testing C++:
+For testing Installation of C++:
 
 g++ gui\_cpp\_test.cpp -o gui\_cpp\_test \`pkg-config --cflags --libs opencv\`
+
 ./gui\_cpp\_test
 
 
-Testing Python
+For testing Installation of Python:
 
 python3 gui\_python\_test.py
 
