@@ -1,6 +1,6 @@
-#YOLOv2 Custom Dataset
+# YOLOv2 Custom Dataset
 
-#1 Detection Using A Pre-Trained Model
+# 1 Detection Using A Pre-Trained Model
 
 ```
 git clone https://github.com/pjreddie/darknet
