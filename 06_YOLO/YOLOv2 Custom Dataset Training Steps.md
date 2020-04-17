@@ -62,19 +62,19 @@ save the file
 make
 ```
 
-#3 Training
+# 3 Training
 
 ```
-./darknet detector train cfg/coco.data cfg/yolov2.cfg darknet19\_448.conv.23 > train.log
+./darknet detector train cfg/coco.data cfg/yolov2.cfg darknet19_448.conv.23 > train.log
 ```
 
-#4 Testing
+# 4 Testing
 
 ```
-./darknet  detector  test  cfg/voc.data  cfg/yolov2.cfg  yolov270000.weights  Images/imagefile.jpg -out myfile
+./darknet  detector  test  cfg/voc.data  cfg/yolov2.cfg  yolov2_70000.weights  Images/imagefile.jpg -out myfile
 ```
 
 For running a video:
 ```
-./darknet detector demo cfg/coco.data cfg/yolov2.cfg yolov2\_70000.weights <video file>
+./darknet detector demo cfg/coco.data cfg/yolov2.cfg yolov2_70000.weights <video file>
 ```
