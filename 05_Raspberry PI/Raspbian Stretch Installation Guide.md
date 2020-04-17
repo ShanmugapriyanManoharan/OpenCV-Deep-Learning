@@ -21,9 +21,9 @@ f. Click Save changes.
 
 Type the following command to expand the Raspberry Pi3 file system:
 
-'''
+```
 $ sudo raspi-config
-'''
+```
 
 Then select the following:
 
