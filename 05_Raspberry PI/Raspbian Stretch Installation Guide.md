@@ -20,7 +20,9 @@ f. Click Save changes.
 # Step 2: Expand filesystem
 
 Type the following command to expand the Raspberry Pi3 file system:
+'''shell
 sudo raspi-config
+'''
 
 Then select the following:
 
@@ -30,16 +32,19 @@ Advanced Options > A1 Expand filesystem > Press “Enter
 
 a. The first step is to update and upgrade any existing packages:
 
+'''shell
 sudo apt-get update
 
 sudo apt-get upgrade
+'''
 
 Then reboot your pi.
 
 b. Install CMAKE developer packages:
 
+'''shell
 sudo apt-get install build-essential cmake pkg-config -y
-
+'''
 c. Install Image I/O packages:
 
 sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev -y
