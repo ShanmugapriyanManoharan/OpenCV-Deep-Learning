@@ -26,7 +26,7 @@ sudo raspi-config
 
 Then select the following:
 
-Advanced Options > A1 Expand filesystem > Press “Enter
+Advanced Options > A1 Expand filesystem > Press Enter
 
 # Step 3: Install Dependencies
 
