@@ -15,3 +15,5 @@
 06: Object Detection Training Procedure
 
 07: Speed Estimation (Optical Flow)
+
+08: Autoencoder & Denoising
