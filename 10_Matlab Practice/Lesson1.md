@@ -1,6 +1,9 @@
 # Matlab Practice
 
 ## Lesson 1
+
+### Matlab Calculation
+
 1. We borrowed $1000 at a 10% annual interest rate. If we did not make a payment for two years, and assuming there is no penalty for non-payment, how much do we owe now?
 Assign the result to a variable called debt.
 
@@ -15,6 +18,8 @@ debt =
 
    1.2100e+03
 ```
+
+### Lesson 1 Wrap-Up
 
 2.1. As of early 2018, Usain Bolt holds the world record in the men's 100 meter dash. It is 9.58 seconds. What was his average speed in Km/h? Assign the result to a variable
 called hundred.
