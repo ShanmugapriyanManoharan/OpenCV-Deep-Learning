@@ -17,3 +17,9 @@
 07: Speed Estimation (Optical Flow)
 
 08: Autoencoder & Denoising
+
+09: Natural Language Processing
+
+10: MATLAB Practice
+
+11: Coursera Guided Projects
